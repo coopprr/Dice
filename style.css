@@ -1,0 +1,177 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    background-color: #e0e0e0;
+    font-family: 'Barlow', sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    height: 100vh;
+}
+
+/*******************************************
+*** General Styles
+*******************************************/
+
+.container {
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    padding: 50px;
+}
+.player-0-panel{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    background-color: #fff;
+}
+.player-1-panel{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    background-color: #fff;
+}
+.center {
+    display: flex;
+    flex-direction: column;
+    height: 80%;
+    position: absolute;
+    justify-content: flex-end;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+/*******************************************
+*** Buttons
+*******************************************/
+
+button {
+    width: 200px;
+    color: #555;
+    background: none;
+    border: none;
+    font-size: 100%;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-weight: 300;
+    transition: font-weight 0.15s;
+}
+button:hover{
+    font-weight: 600;
+}
+.btn-new {
+    position: absolute;
+    left: 50%;
+    top: 10px;
+    transform: translate(-50%);
+}
+.center .final-score {
+    text-align: center;
+    border: none;
+}
+.center .final-score:focus {
+    background-color: wheat;
+    outline: none;
+    border-bottom: 2px solid red;
+}
+.center .btn-roll,
+.center .btn-hold,
+.center .final-score {
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*******************************************
+*** Icons
+*******************************************/
+
+.small-icon {
+    color: #EB4D4D;
+    display: inline-block;
+    margin-right: 10px;
+    font-size: 120%;
+    vertical-align: middle;
+}
+
+/*******************************************
+*** Dice
+*******************************************/
+
+.dice{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%);
+    height: 100px;
+    box-shadow: 0 10px 100px rgb(0, 0,0);
+}
+
+/*******************************************
+*** Players
+*******************************************/
+
+.player-name {
+    font-size: 40px;
+    font-weight: 100;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+    position: relative;
+}
+.player-score {
+    text-align: center;
+    font-size: 400%;
+    font-weight: 100;
+    color: #EB4D4D;
+    margin-bottom: 100px;
+}
+.player-current-box {
+    background-color: #EB4D4D;
+    color: #fff;
+    width: 40%;
+    margin: 0 auto;
+    padding: 12px;
+    text-align: center;
+}
+.player-current-label {
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    color: #222;
+
+}
+.player-current-score {
+    font-size: 150%;
+}
+
+/*******************************************
+*** Active
+*******************************************/
+.active {
+    background-color: #f7f7f7;
+}
+.active .player-name {
+    font-weight: 600;
+}
+.active .player-name::after {
+    content: "\2022";
+    color: #EB4D4D;
+}
+.winner {
+    background-color: #fff;
+}
+.winner .player-name {
+    color: #EB4D4D;
+    font-weight: 500;
+}

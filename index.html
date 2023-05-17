@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dice</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="player-0-panel active">
+            <div class="player-name"> Player 1</div>
+            <div class="player-score">0</div>
+            <div class="player-current-box">
+                <div class="player-current-label">Current</div>
+                <div class="player-current-score">0</div>
+            </div>
+        </div>
+
+        <div class="center">
+            <button class="btn-new"> <ion-icon class="small-icon" name="add-circle-outline"></ion-icon class="small-icon"> New Game</button>
+            <img src="./img/dice-1.png" alt="dice" class="dice">
+            <button class="btn-roll"> <ion-icon class="small-icon" name="repeat-outline"></ion-icon class="small-icon">Roll The Dice </button>
+            <button class="btn-hold"> <ion-icon class="small-icon" name="download-outline"></ion-icon class="small-icon"> Hold </button>
+            <input type="text" name="" id="" placeholder="Winner Score" class="final-score">
+        </div>
+
+        <div class="player-1-panel">
+            <div class="player-name"> Player 2</div>
+            <div class="player-score">0</div>
+            <div class="player-current-box">
+                <div class="player-current-label">Current</div>
+                <div class="player-current-score">0</div>
+            </div>
+        </div>
+    </div>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script type="text/javascript" src="./script.js"></script>
+</body>
+</html>
